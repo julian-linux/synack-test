@@ -1,0 +1,21 @@
+{
+  "IMAGE": "Imagen",
+  "ID": "Id",
+  "NAME":  "Nombre",
+  "CODE": "Código",
+  "PRICE":  "Precio",
+  "PRODUCT": "Producto",
+  "DESCRIPTION":  "Descripción",
+  "PRODUCTS":  "Productos",
+  "SPANISH": "Español",
+  "ENGLISH": "Ingles",
+  "SEARCH": "Buscar",
+  "SEARCH_BY_NAME": "Buscar por nombre",
+  "HELP_1": "Tiene implementado infinite scroll",
+  "HELP_2": "Puedes cambiar idiomas",
+  "HELP_3": "Puedes buscar por nombre y limpiar la búsqueda",
+
+
+
+  "": ""
+}

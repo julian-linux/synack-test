@@ -1,0 +1,19 @@
+{
+  "IMAGE": "Image",
+  "ID": "Id",
+  "NAME":  "Name",
+  "CODE": "Code",
+  "PRICE":  "Price",
+  "PRODUCT": "Product",
+  "DESCRIPTION":  "Description",
+  "PRODUCTS":  "Products",
+  "SPANISH": "Spanish",
+  "ENGLISH": "English",
+  "SEARCH": "Search",
+  "SEARCH_BY_NAME": "Search by name",
+  "HELP_1": "Uses infinite scroll",
+  "HELP_2": "Can switch between languages",
+  "HELP_3": "Can search by name and reset it",
+
+  "": ""
+}
