@@ -14,7 +14,7 @@ export const dispatchActionGetProductsData = (dispatch) => async (
       dispatch(ac.getProductsSuccessAC(data));
     }, 1000);
   } catch (e) {
-    console.error('---error in dispatchActionGetProductsData---', e);
+    window.console.error('---error in dispatchActionGetProductsData---', e);
     dispatch(ac.requestErrorAC());
   }
 };

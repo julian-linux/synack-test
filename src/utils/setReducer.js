@@ -7,6 +7,7 @@ const setReducer = (state, payload, option, path) => {
   let newState = merge({}, state, payload);
 
   if (option === 'set' && has(payload, path)) {
+    // eslint-disable-next-line no-underscore-dangle
     if (state.products._page > 1) {
       newState = set(newState, path, [...get(state, path, null), ...get(payload, path, null)]);
     } else {

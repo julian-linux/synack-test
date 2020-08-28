@@ -51,6 +51,7 @@ const ComponentTable = ({
 ComponentTable.propTypes = {
   head: PropTypes.arrayOf(PropTypes.oneOfType([PropTypes.string, PropTypes.number])).isRequired,
   body: PropTypes.arrayOf(PropTypes.arrayOf(PropTypes.any)).isRequired,
+  // eslint-disable-next-line react/forbid-prop-types
   innerRef: PropTypes.any.isRequired,
   fetchingMore: PropTypes.bool.isRequired,
 };

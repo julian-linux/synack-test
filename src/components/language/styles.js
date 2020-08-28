@@ -1,21 +1,21 @@
-import { withStyles } from "@material-ui/core/styles";
-import Switch from "@material-ui/core/Switch";
+import { withStyles } from '@material-ui/core/styles';
+import Switch from '@material-ui/core/Switch';
 
 export const AntSwitch = withStyles((theme) => ({
   root: {
-    fontSize: "9px",
+    fontSize: '9px',
     width: 28,
     height: 16,
     padding: 0,
-    display: "flex",
+    display: 'flex',
   },
   switchBase: {
     padding: 2,
     color: theme.palette.grey[500],
-    "&$checked": {
-      transform: "translateX(12px)",
+    '&$checked': {
+      transform: 'translateX(12px)',
       color: theme.palette.common.white,
-      "& + $track": {
+      '& + $track': {
         opacity: 1,
         backgroundColor: theme.palette.primary.main,
         borderColor: theme.palette.primary.main,
@@ -25,7 +25,7 @@ export const AntSwitch = withStyles((theme) => ({
   thumb: {
     width: 12,
     height: 12,
-    boxShadow: "none",
+    boxShadow: 'none',
   },
   track: {
     border: `1px solid ${theme.palette.grey[500]}`,

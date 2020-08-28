@@ -14,7 +14,7 @@ const Loading = ({ error, backdrop }) => {
   const classes = useStyles();
 
   if (error) {
-    console.error('error in loading...', error);
+    window.console.error('error in loading...', error);
   }
 
   if (backdrop) {

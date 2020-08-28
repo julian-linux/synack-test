@@ -1,21 +1,21 @@
-import "fontsource-roboto";
+import 'fontsource-roboto';
 // Libraries
-import React from "react";
-import ReactDOM from "react-dom";
-import { Provider } from "react-redux";
-import { HashRouter as Router } from "react-router-dom"
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { Provider } from 'react-redux';
+import { HashRouter as Router } from 'react-router-dom';
 // Service Worker
-import * as serviceWorker from "./serviceWorker";
 
 // Material Components
-import CssBaseline from "@material-ui/core/CssBaseline";
-import Container from "@material-ui/core/Container";
+import CssBaseline from '@material-ui/core/CssBaseline';
+import Container from '@material-ui/core/Container';
 
 // Routes
-import Routes from 'config/routes'
+import Routes from 'config/routes';
+import * as serviceWorker from './serviceWorker';
 
 // Store
-import store from "./config/store";
+import store from './config/store';
 
 ReactDOM.render(
   <>
@@ -28,7 +28,7 @@ ReactDOM.render(
       </Container>
     </Provider>
   </>,
-  document.getElementById("root")
+  document.getElementById('root'),
 );
 
 serviceWorker.unregister();

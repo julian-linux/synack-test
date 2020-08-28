@@ -21,8 +21,14 @@ module.exports = {
     "max-len": 0,
     "camelcase": 0,
     "react/jsx-props-no-spreading": 0,
-    "react/jsx-filename-extension": 0
+    "react/jsx-filename-extension": 0,
+    "import/prefer-default-export": 0
   },
+  ignorePatterns: [
+    "src/setupTests.js",
+    "src/serviceWorker.js",
+    "node_modules"
+  ],
   settings: {
     "import/resolver": {
       "node": {

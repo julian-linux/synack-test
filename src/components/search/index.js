@@ -32,10 +32,9 @@ const Search = ({
   };
 
   useEffect(() => {
-    if (!inputValue || (inputValue.length < length)) {
-      return undefined;
+    if (inputValue.length >= length) {
+      debounceSearch.current({ key: inputValue });
     }
-    debounceSearch.current({ key: inputValue });
   }, [inputValue, length]);
 
   return (
@@ -74,6 +73,10 @@ Search.propTypes = {
    * Function for reset search
    */
   onClear: PropTypes.func.isRequired,
+  /**
+   * show loading at bottom
+   */
+  loading: PropTypes.bool.isRequired,
 };
 
 Search.defaultProps = {
