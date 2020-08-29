@@ -37,20 +37,31 @@ const Search = ({
     }
   }, [inputValue, length]);
 
+  const endAdornment = loading
+    ? (<CircularProgress color="primary" size={24} />)
+    : (
+      <IconButton
+        id="SearchBoxClear"
+        data-testid="SearchBoxClear"
+        aria-label="search-box-clear"
+        onClick={handleClear}
+        size="small"
+      >
+        <ClearIcon size="small" />
+      </IconButton>
+    );
+
   return (
     <Box my={1} className={classes.root}>
       <TextField
-        id="outlined-basic"
+        id="Search"
+        name="search"
         variant="outlined"
         label={onlyText('SEARCH')}
         helperText={onlyText('SEARCH_BY_NAME')}
         value={inputValue}
         onChange={(evt) => setInputValue(evt.target.value)}
-        InputProps={{
-          endAdornment: loading
-            ? (<CircularProgress color="primary" size={24} />)
-            : (<IconButton aria-label="search-box-clear" onClick={handleClear} size="small"><ClearIcon size="small" /></IconButton>),
-        }}
+        InputProps={{ endAdornment }}
       />
     </Box>
   );

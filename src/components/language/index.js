@@ -31,7 +31,8 @@ const Language = () => {
             <AntSwitch
               checked={checked}
               onChange={handleChange}
-              name="checked"
+              name="changeLanguage"
+              id="ChangeLanguage"
             />
           </Grid>
           <Grid item>{onlyText('ENGLISH')}</Grid>

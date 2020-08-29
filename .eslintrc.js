@@ -37,5 +37,16 @@ module.exports = {
         ]
       }
     }
+  },
+  globals: {
+    "describe": true,
+    "mount": true,
+    "it": true,
+    "expect": true,
+    "beforeEach": true,
+    "afterEach": true,
+    "jest": true,
+    "beforeAll": true,
+    "afterAll": true,
   }
 };

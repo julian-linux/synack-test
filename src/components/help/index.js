@@ -28,11 +28,12 @@ const Help = () => {
   const id = open ? 'simple-popover' : undefined;
 
   return (
-    <>
-      <IconButton onClick={handleClick}>
+    <Box>
+      <IconButton onClick={handleClick} id="HelpButtonShowHelp" data-testid="help_icon_button">
         <HelpIcon fontSize="small" color="secondary" />
       </IconButton>
       <Popover
+        data-testid="help_popover"
         id={id}
         open={open}
         anchorEl={anchorEl}
@@ -42,7 +43,7 @@ const Help = () => {
           horizontal: 'center',
         }}
         transformOrigin={{
-          vertical: 'top',
+          vertical: 'bottom',
           horizontal: 'center',
         }}
       >
@@ -61,7 +62,7 @@ const Help = () => {
           </Box>
         </Box>
       </Popover>
-    </>
+    </Box>
   );
 };
 
