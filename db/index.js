@@ -4,7 +4,7 @@ const {
 
 module.exports = () => {
   const products = [];
-  for (let i = 0; i < 9; i++) {
+  for (let i = 0; i < 100; i++) {
     products.push({
       id: i + 1,
       name: commerce.productName(),

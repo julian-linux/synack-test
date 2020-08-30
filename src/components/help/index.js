@@ -13,6 +13,11 @@ import LabelImportantIcon from '@material-ui/icons/LabelImportant';
 // Intl
 import Intl from 'config/intl';
 
+/**
+ * Show the basic app features.
+ *
+ * Just click on the icon and the component will show some tips.
+ */
 const Help = () => {
   const [anchorEl, setAnchorEl] = React.useState(null);
 

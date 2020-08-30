@@ -10,20 +10,26 @@ import Backdrop from '@material-ui/core/Backdrop';
 // Styles
 import useStyles from './styles';
 
-const Loading = ({ error, backdrop }) => {
+/**
+ * Component for show the user that the app is busy doing something
+ *
+ *  @param backdrop
+ */
+const Loading = ({ open, backdrop }) => {
   const classes = useStyles();
-
-  if (error) {
-    window.console.error('error in loading...', error);
-  }
 
   if (backdrop) {
     return (
-      <Backdrop className={classes.backdrop} open>
+      <Backdrop className={classes.backdrop} open={open}>
         <CircularProgress color="inherit" />
       </Backdrop>
     );
   }
+
+  if (!open) {
+    return null;
+  }
+
   return (
     <Grid container justify="center" alignItems="center" flex={1}>
       <Grid container item xs={12} sm={6} md={3} mt={5} justify="center" alignItems="center">
@@ -34,13 +40,18 @@ const Loading = ({ error, backdrop }) => {
 };
 
 Loading.propTypes = {
-  // eslint-disable-next-line react/forbid-prop-types
-  error: PropTypes.any,
+  /**
+   * show loading?
+   */
+  open: PropTypes.bool,
+  /**
+   * loading full page?
+   */
   backdrop: PropTypes.bool,
 };
 
 Loading.defaultProps = {
-  error: null,
+  open: true,
   backdrop: false,
 };
 

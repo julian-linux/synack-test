@@ -13,6 +13,9 @@ import { onlyText } from 'config/intl';
 // Styles
 import { AntSwitch } from './styles';
 
+/**
+ * Component for change the page language
+ */
 const Language = () => {
   const [setLang, lang] = useLang();
   const [checked, setChecked] = useState(lang === 'en');

@@ -18,6 +18,9 @@ import { onlyText } from 'config/intl';
 // Styles
 import useStyles from './styles';
 
+/**
+ * Component for search by **name** in api.
+ */
 const Search = ({
   onSearch, timeout, length, loading, onClear,
 }) => {

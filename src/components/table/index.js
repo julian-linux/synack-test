@@ -14,6 +14,13 @@ import Paper from '@material-ui/core/Paper';
 // Components
 import Loading from 'components/loading';
 
+/**
+ * Component for show results.
+ *
+ * Is based on Material-ui Table component.
+ *
+ * Has custom functionality for easy fill data in UI.
+ */
 const ComponentTable = ({
   head, body, innerRef, fetchingMore,
 }) => (
@@ -49,10 +56,22 @@ const ComponentTable = ({
 );
 
 ComponentTable.propTypes = {
+  /**
+   * Table Header fields. Must be an array of strings/numbers
+   */
   head: PropTypes.arrayOf(PropTypes.oneOfType([PropTypes.string, PropTypes.number])).isRequired,
+  /**
+   * Table Header fields. Must be an array of arrays of any element
+   */
   body: PropTypes.arrayOf(PropTypes.arrayOf(PropTypes.any)).isRequired,
+  /**
+   * used for get the table **ref** for know when scroll reach end.
+   */
   // eslint-disable-next-line react/forbid-prop-types
   innerRef: PropTypes.any.isRequired,
+  /**
+   * Show bottom loading if is requesting more data
+   */
   fetchingMore: PropTypes.bool.isRequired,
 };
 

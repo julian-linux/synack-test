@@ -101,7 +101,7 @@ const Products = () => {
         <Intl langKey="PRODUCTS" color="primary" variant="h3" />
         <Help />
       </Box>
-      <Search onSearch={handleSearch} onClear={handleClear} />
+      <Search onSearch={handleSearch} onClear={handleClear} loading={loading} />
       <Table {...tableData} innerRef={infiniteRef} fetchingMore={_page > 1 && loading} />
     </Box>
   );
