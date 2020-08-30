@@ -1,5 +1,4 @@
 ## Test for Synack
-
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and [json-server](https://github.com/typicode/json-server).
 
 
@@ -12,3 +11,5 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ### `yarn test`
 run tests
 
+### `yarn storybook`
+run storybook
